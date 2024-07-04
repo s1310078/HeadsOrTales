@@ -19,4 +19,9 @@ int main(){
     else
       printf("Tails\n");
   }
+
+  printf("Heads: %d, Tails: %d\n", heads, N - heads);
+  if(heads > N / 2)
+    printf("You won!\n");
+    else printf("You lost.\n");
 }

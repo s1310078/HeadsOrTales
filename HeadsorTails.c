@@ -7,6 +7,12 @@ int main(){
   int i;
   int coin, heads = 0;
 
+   char user_name[100];
+
+  printf("Who are you?\n");
+  scanf("%s",user_name);
+  printf("Hello, %s!\n", user_name);
+
   srand(time(NULL));
 
   printf("Tossing a coin...\n");
@@ -19,4 +25,6 @@ int main(){
     else
       printf("Tails\n");
   }
+  printf("Heads: %d, Tails: %d\n", heads, N - heads);
+
 }
